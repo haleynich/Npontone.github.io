@@ -65,7 +65,7 @@ var config = {
             id: 'other-identifier',
             title: 'Second Title',
             image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
+            description: '<canvas id="myChart" width="400" height="400"></canvas>',
             location: {
                 center: [-77.020636, 38.886900],
                 zoom: 13.5,
