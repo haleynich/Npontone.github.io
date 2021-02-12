@@ -65,7 +65,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             width: 60vw;
             padding: 2vh;
             text-align: center;
-            color: #f5b041  ;
+            color: #FFFFFF  ;
             font-family: "Monaco";
             border-radius: 25px;
         }
@@ -311,20 +311,22 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
   </script>
   <script>var ctx = document.getElementById('myChart').getContext('2d');
+
+
 var myChart = new Chart(ctx, {
 type: 'bar',
 data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['Highway', 'Railway', 'Management destruction'],
     datasets: [{
-        label: 'Cause of wolf deaths',
-        data: [12, 19, 3, 5, 2, 3],
+        label: 'Number of wolf deaths',
+        data: [16, 12, 2 ],
         backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
         ],
         borderWidth: 1
     }]
