@@ -41,6 +41,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
     <style>
         body {
             margin:0;
@@ -62,7 +64,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             margin: 3vh auto;
             width: 60vw;
             padding: 2vh;
-            opacity: 0.5;
             text-align: center;
             color: #f5b041  ;
             font-family: "Monaco";
@@ -81,6 +82,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             padding-top: 10vh;
             padding-bottom: 10vh;
             z-index: 100;
+
         }
         .centered {
             width: 50vw;
@@ -108,7 +110,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             opacity: 0.25;
         }
         .step.active {
-            opacity: 0.9;
+            opacity: 1;
         }
 
           /* Changing this will edit the box around the text */
@@ -308,35 +310,33 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     window.addEventListener('resize', scroller.resize);
 
   </script>
-
-
   <script>var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
 type: 'bar',
 data: {
-  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-  datasets: [{
-      label: 'Cause of wolf deaths',
-      data: [12, 19, 3, 5, 2, 3],
-      backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)'
-      ],
-      borderWidth: 1
-  }]
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+        label: 'Cause of wolf deaths',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+        ],
+        borderWidth: 1
+    }]
 },
 options: {
-  scales: {
-      yAxes: [{
-          ticks: {
-              beginAtZero: true
-          }
-      }]
-  }
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }]
+    }
 }
 });
 
