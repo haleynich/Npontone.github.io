@@ -57,13 +57,13 @@ var config = {
             // and wolf location data.
             title: 'Chapter 2: Northwestern Wolves.',
             image: 'images/Wolf.png',
-            description: 'Northwestern wolves (C. lupus occidentalis) are a subspecies of gray wolf in North America. There are many colour variations including black, white and tan. They are found in Alaska, to the Northwestern United States in rock mountain areas. This apex predator lives in packs of 6-12 with distinct hierarchical roles. Wolves are most active at dawn and dusk and can spend up to 10 hours of their day on the move. These animals have a varied diet including hares, caribou and beavers. Northwestern wolves are threatened due to trapping as well as habitat fragmentation.',
+            description: 'Northwestern wolves (C. lupus occidentalis) are a subspecies of gray wolf in North America. There are many colour variations including black, white and tan. They are found in Alaska, to the Northwestern United States in rock mountain areas. This apex predator lives in packs of 6-12 with distinct hierarchical roles. Wolves are most active at dawn and dusk and can spend up to 10 hours of their day on the move. These animals have a varied diet including hares, caribou and beavers. Northwestern wolves are threatened due to trapping as well as habitat fragmentation and loss (Northwestern Wolf, Animalia)',
             //Focuses camera on an area with high wolf activity.
             location: {
-              center: { lon: -116.06928, lat: 51.02452 },
-                        zoom: 8.17,
-                        pitch: 0.00,
-                        bearing: -4.76
+              center: { lon: -115.95533, lat: 51.29811 },
+                        zoom: 9.58,
+                        pitch: 47.00,
+                        bearing: 11.87
             },
             onChapterEnter: [
                  {
@@ -75,7 +75,7 @@ var config = {
             onChapterExit: [
                  {
                      layer: 'hwy93label',
-                     opacity: 0
+                     opacity: 1
                  }
             ]
         },
